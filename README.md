@@ -61,7 +61,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+![PriorityMatrix](https://user-images.githubusercontent.com/80722675/131421764-c80b63ff-944e-47d0-8a54-89e09a2ca4f7.PNG)
 
 ## Timeframes
 
