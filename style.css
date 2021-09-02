@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fredericka the Great", cursive;
+  background: linear-gradient(to right, gold, aqua);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(247, 14, 14);
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.search-container {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.search-country {
+  color: rgb(54, 28, 204);
+  font-size: 20px;
+  
+}
+
+.data-container {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.stats-container {
+  text-align: center;
+  font-size: large;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 80px;
+}
+
+.div {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: rgb(238, 18, 128);
+  font-size: 30px;
+}
+
+.video {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+.video1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.footer {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 7px;
+  bottom: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .stats {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+  }
+}
+
