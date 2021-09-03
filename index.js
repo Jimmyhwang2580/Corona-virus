@@ -1,6 +1,6 @@
 
 
- // 1. SELECT ELEMENTS
+//  1. SELECT ELEMENTS
 // search country (because we need to know what country someone is searching for)
 const searchCountry = document.querySelector(".search-country");
 
@@ -9,9 +9,6 @@ const cases = document.querySelector("#cases");
 
 // deaths (because we need somewhere to show the amount of cases that we get from our API)
 const deaths = document.querySelector("#deaths");
-
-// % of deaths (same as above)
-const percent = document.querySelector("#percent");
 
 // country (same as above)
 const country = document.querySelector("#country");
@@ -23,30 +20,41 @@ const population = document.querySelector("#population");
 const lastUpdated = document.querySelector("#update");
 
 // form (because we need to listen for when the send button is pressed)
-const form = document.querySelector(".submit")
+const form = document.querySelector(".search-container")
 
 // 2. CREATE OUR EVENT HANDLERS
 // create an async function that can request the API and change the information in our HTML
-cont async() = document.querySelector.innerHTML
+
+const virus = async () => {
+  try {
+    const response = await axios.get("https://coronavirus-tracker-api.herokuapp.com/v2/locations/254");
+          const trackerInfo = response.data.location;
+          console.log(trackerInfo);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    virus();
+
+
 
   // 2a. GET INFORMATION FOR REQUEST
   // get searchCountry's current value and save it into a variable
-const searchCountry = async () => {
-  try {
 
-    
+  searchCountry = document.querySelector(".search-country")
+ 
 
- // 2b. MAKE API CALL AND SAVE INTO VARIABLE
+  // 2b. MAKE API CALL AND SAVE INTO VARIABLE
   // use the searchCountry's current value to get the data from our API and save it into a variable (so we have our response)
    
-  const response = await axios.get("https://coronavirus-tracker-api.herokuapp.com/v2/locations/");
+  searchCountry = document.querySelector(".search-country")
 
 
   // 2c. UPDATE THE HTML / TEXT TO SHOW INFORMATION FROM API
   // change our cases inner text to be the cases from our response
   // do the same as the cases with deaths, % of deaths, etc.
 
-  const casesHandler = () => {
+    const casesHandler = () => {
     console.log(casesHandler)
     }
     
@@ -54,10 +62,7 @@ const searchCountry = async () => {
     console.log(deathsHandler)
     }
     
-    const percentHandler = () => {
-    console.log(percentHandler)
-    }
-    
+
     const countryHandler = () => {
     console.log(countryHandler)
     }
@@ -70,22 +75,14 @@ const searchCountry = async () => {
     console.log(formHandler)
     }
 
-  }
- 
-
-}
 
  
 
 // 3. ATTACH OUR EVENT LISTENERS
 // attach our async function with an event listener to our form on the submit event
 
-cases.addEventListener("click", casesHandler); 
-deaths.addEventListener("click", deathsHandler); 
-percent.addEventListener("click", percentHandler); 
-country.addEventListener("click", countryHandler); 
-lastUpdated.addEventListener("click", lastUpdatedHandler); 
-form.addEventListener("click", formHandler); 
+form.addEventListener("submit", virus); 
+
 
 
 

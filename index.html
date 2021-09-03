@@ -11,7 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
+    
     <title>Covid Tracker</title>
   </head>
   <body>
@@ -19,20 +23,19 @@
 
     <h1 class="title">COVID-19 TRACKER</h1>
 
-    <div class="search-container">
+    <form class="search-container">
       <label class="search-country" for="search">SEARCH COUNTRY:</label>
       <input type="search" id="search" name="search" />
       <input class="submit" type="submit">
-    </div>
+    </form>
 
     <div class="data-container"> 
       <div class="stats-container">
-        <div class="div" id="country">Country</div>
-        <div class="div" id="population">Population</div>
-        <div class="div" id="cases">Cases</div>
-        <div class="div" id="death">Death</div>
-        <div class="div" id="percent">% of Death</div>
-        <div class="div" id="update">Last Updated</div>
+        <div class="div" id="country">Country: US</div>
+        <div class="div" id="population">Population: 327,167,434</div>
+        <div class="div" id="cases">Cases: 39,549,299</div>
+        <div class="div" id="death">Death: 643,669</div>
+        <div class="div" id="update">Last Updated: 2021-09-03</div>
       </div>
     </div>
 

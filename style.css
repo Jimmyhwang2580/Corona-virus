@@ -29,7 +29,7 @@ img {
   margin-top: 40px;
 }
 .search-country {
-  color: rgb(54, 28, 204);
+  color: rgb(245, 10, 10);
   font-size: 20px;
   
 }
@@ -44,8 +44,8 @@ img {
   font-size: large;
   margin-top: 70px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   column-gap: 20px;
   row-gap: 80px;
 }
@@ -53,7 +53,7 @@ img {
 .div {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
-  color: rgb(238, 18, 128);
+  color: rgb(245, 0, 0);
   font-size: 30px;
 }
 
